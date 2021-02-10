@@ -46,6 +46,7 @@ public class AddActivity extends AppCompatActivity {
                         break;
                     case R.id.radio_keluar:
                         status = "KELUAR";
+                        break;
                 }
                 Log.d("Log Status", status);
             }

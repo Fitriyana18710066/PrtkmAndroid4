@@ -2,8 +2,10 @@ package com.fitri.uangkassqlite;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -92,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -124,8 +128,7 @@ public class MainActivity extends AppCompatActivity {
         cursor.moveToFirst();
 
         int i;
-        for (i = 0; i < cursor.getCount(); i++)
-        {
+        for (i = 0; i < cursor.getCount(); i++){
             cursor.moveToPosition(i);
 
             HashMap<String, String> map = new HashMap<String, String>();
