@@ -71,6 +71,16 @@
                 android:text="50.000"
                 android:textSize="16dp"
                 android:layout_below="@id/view_garis"/>
+
+            <TextView
+                android:id="@+id/text_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_total"
+                android:textSize="10dp"
+                android:text="SEMUA"
+                android:textAlignment="center"
+                android:visibility="gone"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
